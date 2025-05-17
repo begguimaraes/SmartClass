@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0d586;
+}
+
+/* GALERIA PDF */
+.pdf-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.pdf-card {
+  width: 260px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pdf-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-imagem {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.pdf-descricao {
+  padding: 15px;
+}
+
+.pdf-descricao h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #333;
+}
+
+.pdf-descricao p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #b4a3c0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo img {
+  height: 65px;
+  width: auto;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 4px 0;
+}
+
+/* MENU LATERAL */
+.menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: white;
+  width: 220px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu a:hover {
+  background: #f0f0f0;
+}
+
+.menu a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* FEED */
+.content {
+  padding-top: 80px; /* Corrigido: evita que a navbar sobreponha */
+  max-width: 400px;
+  margin: auto;
+}
+
+.post {
+  background: #fff;
+  border-radius: 10px;
+  margin: 15px 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.post-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-header span {
+  font-weight: bold;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+.post-content {
+  padding: 10px 15px;
+}
+
+.post-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.post-caption {
+  font-size: 14px;
+}
+/* COMUNIDADES - Página de comunidades estudantis */
+
+.content h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.comunidade-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.comunidade-card {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.comunidade-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.comunidade-info {
+  padding: 15px;
+  flex: 1;
+}
+
+.comunidade-info h3 {
+  margin-bottom: 8px;
+  color: #6a0dad;
+}
+
+.comunidade-info p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.comunidade-info button {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.comunidade-info button:hover {
+  background-color: #5a0db0;
+}
+
+@media (max-width: 600px) {
+  .comunidade-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comunidade-card img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .comunidade-info {
+    text-align: center;
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .post {
+    margin: 20px 10px;
+  }
+}

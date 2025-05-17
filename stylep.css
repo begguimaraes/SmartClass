@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #b4a3c0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 65px;
+  width: auto;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 4px 0;
+}
+
+/* MENU LATERAL */
+.menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: white;
+  width: 220px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu a:hover {
+  background: #f0f0f0;
+}
+
+.menu a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* PERFIL HEADER */
+.profile-header {
+  background-color: #6a0dad;
+  color: white;
+  padding: 90px 20px 20px; /* Adicionado espaçamento superior para compensar a navbar */
+  text-align: center;
+}
+
+.profile-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  margin-bottom: 10px;
+}
+
+.profile-header h2 {
+  margin: 10px 0 5px;
+}
+
+.profile-header p {
+  font-size: 14px;
+}
+
+/* ESTATÍSTICAS */
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-stats div {
+  text-align: center;
+}
+
+.profile-stats span {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* GALERIA */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  padding: 2px;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

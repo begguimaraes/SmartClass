@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartClass</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <link rel="shortcut icon" href="imgs/logo.ico" type="image/x-icon" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="imgs/logo.png" alt="Logo" /></a>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- Menu lateral -->
+  <div class="menu" id="menu">
+    <a href="index.html"><img src="imgs/home.png" alt="Home">Home</a>
+    <a href="perfil.html"><img src="imgs/perfil.png" alt="Perfil">Perfil</a>
+    <a href="cursos.html"><img src="imgs/curos.png" alt="Cursos">Cursos</a>
+    <a href="comunidades.html"><img src="imgs/comunidade.png" alt="Comunidades">Comunidades</a>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="content">
+    <h2>Comunidades Estudantis</h2>
+    <div class="comunidade-lista">
+
+      <!-- Comunidade 1 -->
+      <div class="comunidade-card">
+        <img src="imgs/comunidades/enem.jpeg" alt="ENEM">
+        <div class="comunidade-info">
+          <h3>ENEM 2025</h3>
+          <p>Discussões e dicas sobre o ENEM. Compartilhe simulados, resumos e dúvidas.</p>
+          <button>Entrar</button>
+        </div>
+      </div>
+
+      <!-- Comunidade 2 -->
+      <div class="comunidade-card">
+        <img src="imgs/comunidades/matematica.jpeg" alt="Matemática">
+        <div class="comunidade-info">
+          <h3>Matemática</h3>
+          <p>Aprenda e ensine matemática com resumos, listas e desafios semanais.</p>
+          <button>Entrar</button>
+        </div>
+      </div>
+
+      <!-- Comunidade 3 -->
+      <div class="comunidade-card">
+        <img src="imgs/comunidades/quimica.jpeg" alt="Química">
+        <div class="comunidade-info">
+          <h3>Química</h3>
+          <p>Comunidade para amantes da Química: questões, mapas mentais e curiosidades.</p>
+          <button>Entrar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
